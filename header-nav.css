@@ -1,0 +1,71 @@
+body, p, img, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative;
+  font: 12px/1.2em Microsoft YaHei,Simsun, Arial;
+  text-align: left;
+  min-width: 990px; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  border: 0 none; }
+
+input, select {
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse; }
+
+s, em, i {
+  font-style: normal;
+  text-decoration: none; }
+
+.cf {
+  *zoom: 1; }
+
+.cf:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  zoom: 1; }
+
+.header {
+  width: 1138px;
+  margin: 0 auto; }
+
+.header {
+  line-height: 66px;
+  height: 66px; }
+  .header img {
+    float: left;
+    margin-left: 5px;
+    margin-top: 13px; }
+  .header ul {
+    float: left;
+    margin-left: 216px; }
+    .header ul li {
+      width: 100px;
+      float: left;
+      text-align: center;
+      margin-right: 5px; }
+      .header ul li:hover {
+        background-color: #cfdb00; }
+      .header ul li.home {
+        background-color: #cfdb00; }
+      .header ul li a {
+        color: #1e1e1e;
+        font-size: 15px;
+        text-decoration: none; }
+
+.xian {
+  height: 3px;
+  background-image: linear-gradient(180deg, #c8c8c8, #ffffff); }
+
+/*# sourceMappingURL=header-nav.css.map */

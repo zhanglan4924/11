@@ -1,0 +1,156 @@
+.w{
+  width: 1138px;
+  margin: 0 auto;
+}
+@import "header-nav";
+
+$colors:(main:#cfdb00,miaoshu:#b4b4b4,title:#616161,nav:#1e1e1e,white:#ffffff,content:#595757,bg:#f5f5f5);
+$font-sizes:(title:26px,content-title:30px,content:15px);
+
+.titlediv{
+    text-align: center;
+     margin-top: 145px;
+     margin-bottom: 75px;
+  .title{
+    left: 50%;
+    margin-left: -232px;
+    position: relative;
+    height: 3px;
+    width: 464px;
+    background-color:map_get($colors,main);
+    margin-top: 0;
+
+    .title1{
+      background-color: white;
+      position: absolute;
+      left: 115px;
+      top: -9px;
+      display: inline-block;
+      line-height: 22px;
+      font-size: map_get($font-sizes,title);
+      color: map_get($colors,title);
+    }
+  }
+}
+
+
+.block{
+  display: block;
+}
+
+@mixin text-content{
+    span:nth-child(1){
+      font-size: map_get($font-sizes,content-title);
+      color: map_get($colors,miaoshu);
+      font-weight: bold;
+      line-height: 30px;
+      @extend .block;
+    }
+    span:nth-child(2){
+      font-size: map_get($font-sizes,content);
+      color: map_get($colors,miaoshu);
+      @extend .block;
+      margin-top: 23px;
+      line-height: 20px;
+    }
+  }
+
+
+.banner1{
+  position: relative;
+
+  .describe{
+    @include text-content;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    width: 1078px;
+    height: 75px;
+    overflow: hidden;
+    background-color: rgba(20,20,20,0.7);
+  }
+}
+
+
+%li-text{
+  width: 350px;
+  height: 145px;
+  padding: 20px 20px;
+  overflow: hidden;
+}
+
+.content {
+  background-color: map_get($colors, bg);
+  ul {
+    padding: 0 53px;
+    li {
+      padding-top: 42px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #bfbfbf;
+      &:nth-child(odd) {
+        .img {
+          float: left;
+          border: 5px solid white;
+        }
+        .text {
+          @extend %li-text;
+          @include text-content;
+          float: right;
+
+        }
+      }
+
+      &:nth-child(even) {
+        .img {
+          float: right;
+          border: 5px solid white;
+        }
+        .text {
+          @extend %li-text;
+          @include text-content;
+          float: left;
+
+        }
+      }
+    }
+  }
+
+}
+
+.space{
+  text-align: center;
+  position: relative;
+  height: 109px;
+  background-color: map_get($colors, bg);
+  .sanjiao{
+    background-image: url(images/top.png);
+    width: 69px;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+    text-align: center;
+  }
+  p{
+    color: white;
+
+    &:nth-of-type(1){
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &:nth-of-type(2){
+
+    }
+      a{
+        line-height: 40px;
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+      }
+
+    }
+  }
+
+@import "footer";

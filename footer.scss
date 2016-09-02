@@ -1,0 +1,39 @@
+.contact-footer{
+  background-color: white;
+  text-align: center;
+  padding-top: 70px;
+  .title{
+    position: relative;
+    height: 3px;
+    width: 464px;
+    background-color:map_get($colors,main);
+    margin-bottom: 85px;
+
+    .title1{
+      background-color: white;
+      position: absolute;
+      left: 115px;
+      top: -9px;
+      display: inline-block;
+      line-height: 22px;
+      font-size: map_get($font-sizes,title);
+      color: map_get($colors,title);
+    }
+  }
+  .contact-text{
+    font-size: 16px;
+    color: map_get($colors,miaoshu);
+    line-height: 25px;
+  }
+  .banquan{
+    margin-top: 100px;
+    background-color: map_get($colors,miaoshu);
+    height: 67px;
+    line-height: 67px;
+    border-top: 2px solid map_get($colors,main);
+    span{
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
